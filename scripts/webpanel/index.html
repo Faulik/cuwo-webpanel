@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="nav">
+        <ul class="nav">
+            <li class="Server" data-name="Server">
+                <span>Server</span>
+            </li>
+            <li class="Players current-tab" data-name="Players">
+                <span>Players</span>
+            </li>
+            <li class="Chat" data-name="Chat">
+                <span>Chat</span>
+            </li>
+        </ul>
+    </div>
+    <div id="Content">
+        <div id="Server" class="tab "></div>
+        <div id="Players" class="tab hidden-tab">
+            <div id="Player-info">
+                <div class='left-part-over'>
+                    <div class='over-item-7 left-weapon'></div>
+                    <div class='over-item-9 left-ring'></div>
+                    <div class='over-item-2 neck'></div>
+                    <div class='over-item-3 chest'></div>
+                    <div class='over-item-4 feet'></div>
+                    <div class='over-item-12 Special'></div>
+                </div>
+                <div class='center-part-over'>
+                    <span>Name</span>
+                    <span>lvl # class|Specialization</span>
+                    <span>Power</span>
+                    <span>HP</span>
+                    <span>Armor</span>
+                    <span>Resi</span>
+                    <span>Crit</span>
+                    <span>Tempo</span>
+                    <span>Reg</span>
+                    <span>Weapon rating</span>
+                    <span>Armor rating</span>
+                </div>
+                <div class='right-part-over'>
+                    <div class='over-item-8 right-weapon'></div>
+                    <div class='over-item-10 right-ring'></div>
+                    <div class='over-item-6 shoulder'></div>
+                    <div class='over-item-5 hands'></div>
+                    <div class='over-item-11 light'></div>
+                    <div class='over-item-1 pet'></div>
+                </div>
+            </div>
+            <table class="table players">
+                <thead>
+                    <tr>
+                        <th>#ID</th>
+                        <th>Name</th>
+                        <th>Level</th>
+                        <th>Class</th>
+                        <th>Specialization</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+        </div>
+        <div id="Chat" class="tab hidden-tab">
+            <div class="ChatWrap">
+                <div class="" id="server-players"></div>
+                <div class="" id="chat-messages"></div>
+                <div class='chat-input'>
+                    <div class='chat-input-adds'>
+                        <input type="text" value='Server: ' maxlenght='8' id="name-input">
+                    </div>
+                    <div class='message-input-wrap'>
+                        <input type="text" id="message-input">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/jquery-2.0.3.min.js"></script>
+    <script src="assets/js/interface.js"></script>
+</body>
+
+</html>
